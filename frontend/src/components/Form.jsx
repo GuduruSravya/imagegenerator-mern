@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Form = ({labelName,type,name,placeholder,value,handleChange,isSurpriseMe,handleSurprisMe}) => {
+const Form = ({labelName,type,name,placeholder,value,handleChange,isSurpriseMe,handleSurpriseMe}) => {
   return (
     <div>
       <div className='flex items-center gap-2 mb-2'>
@@ -13,10 +13,9 @@ const Form = ({labelName,type,name,placeholder,value,handleChange,isSurpriseMe,h
         {
           isSurpriseMe && (
             <button type="button" 
-            onClick={handleSurprisMe}
+            onClick={handleSurpriseMe}
             className='font-semibold border text-xs bg-[#ECECF1] py-1 px-2 rounded-[5px] text-black'>
               Surprise ME!
-
             </button>
           )
         }
