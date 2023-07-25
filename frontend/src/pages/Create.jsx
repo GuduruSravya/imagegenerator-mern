@@ -13,7 +13,16 @@ const Create = () => {
     prompt:'',
     photo:''
   });
+  const submitted = ()=>{
 
+  }
+  const handleChange = (e)=>{
+
+  }
+   
+  const handleSurpriseMe = ()=>{
+
+  }
   const [generatingImage, setGeneratingImage] = useState(false);
   const [loading, setLoading] = useState(false);
   return (
@@ -26,6 +35,33 @@ const Create = () => {
                 Create visually stunning images through DALL-E AI
             </p>
         </div>
+
+        <form className="mt-16 max-w-3xl" onSubmit={submitted}>
+            <div className="flex flex-col gap-5">
+              <Form
+              labelName="Your name"
+              type="text"
+              name="name"
+              placeholder="Joe Doe"
+              value = {form.name}
+              handleChange = {handleChange}
+
+              />
+
+              <Form
+              labelName="Prompt"
+              type="text"
+              name="prompt"
+              placeholder="A painting of a fox in the style of Starry Night"
+              value = {form.prompt}
+              handleChange = {handleChange}
+              isSurpriseMe
+              handleSurpriseMe = {handleSurpriseMe}
+
+              />
+
+            </div>
+        </form>
 
     </section>
   )
