@@ -89,10 +89,10 @@ const Create = () => {
     <section className="max-w-7xl mx-auto">
        <div>
             <h1 className='font-extrabold text-[#222328] text-[32px]'>
-                Create
+                Create Image
             </h1>
             <p className="mt-2 text-[#666e75] text-[16px] max-w[500px]">
-                Create visually stunning images through DALL-E AI
+                Create visually stunning images through AI
             </p>
         </div>
 
@@ -102,7 +102,7 @@ const Create = () => {
               labelName="Your name"
               type="text"
               name="name"
-              placeholder="Joe Doe"
+              placeholder="Harry Potter"
               value = {form.name}
               handleChange = {handleChange}
 
@@ -150,7 +150,7 @@ const Create = () => {
               <p className='mt-2 text-[#666e75] text-[14px]'>Once you have created the image you want, you can share the image with others</p>
               <button
                type="submit"
-               className='mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
+               className='mt-3 text-white bg-[#38b6ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center'
               >
                 {loading?'Sharing':'Share with the community'}
 

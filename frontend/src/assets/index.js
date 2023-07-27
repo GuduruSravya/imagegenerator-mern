@@ -1,9 +1,11 @@
 import download from './download.png';
-import logo from './logo.svg';
+
 import preview from './preview.png';
+import ai from './ai.jpg';
 
 export {
   download,
-  logo,
+  
   preview,
+  ai
 };

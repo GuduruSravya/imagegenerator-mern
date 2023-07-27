@@ -1,7 +1,8 @@
 import React from 'react'
 import {BrowserRouter as Router,Routes,Route, Link} from 'react-router-dom';
 import {Home,Create} from './pages';
-import {logo} from './assets/index'
+
+import {ai} from './assets/index';
 
 const App = () => {
   return (
@@ -11,9 +12,10 @@ const App = () => {
       sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]
       ">
         <Link to='/'>
-          <img src={logo} className='w-28 object-contain' />
+          <img src={ai} className='w-16 object-contain' />
+          <h2 className='font-bold'>Mind <span className="font-extrabold text-[#38b6ff]">Canvas</span></h2>
         </Link>
-        <Link to='/create' className='font-inter font-medium bg-[#6469ff] text-white
+        <Link to='/create' className='font-inter font-medium bg-[#38b6ff] text-white
         px-4 py-2 rounded-md'>
         Create
         </Link>
@@ -24,11 +26,6 @@ const App = () => {
           <Route path='/create' element={<Create/>}/>
         </Routes>
       </main>
-
-      
- 
-
-    
     </Router>
   )
 }
