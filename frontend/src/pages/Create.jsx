@@ -58,7 +58,7 @@ const Create = () => {
 
         await response.json();
         alert('Success');
-        navigate('/');
+        nav('/');
       } catch (err) {
         alert(err);
       } finally {
